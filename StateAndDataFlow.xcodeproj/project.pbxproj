@@ -11,6 +11,10 @@
 		0630458527C4070F00B51CED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0630458427C4070F00B51CED /* ContentView.swift */; };
 		0630458727C4071000B51CED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0630458627C4071000B51CED /* Assets.xcassets */; };
 		0630458A27C4071000B51CED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0630458927C4071000B51CED /* Preview Assets.xcassets */; };
+		0630459127C40BEA00B51CED /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0630459027C40BEA00B51CED /* TimeCounter.swift */; };
+		0630459327C4131600B51CED /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0630459227C4131600B51CED /* RegisterView.swift */; };
+		0630459527C4147600B51CED /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0630459427C4147600B51CED /* UserManager.swift */; };
+		0630459727C4165200B51CED /* StarterVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0630459627C4165200B51CED /* StarterVIew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		0630458427C4070F00B51CED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0630458627C4071000B51CED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0630458927C4071000B51CED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0630459027C40BEA00B51CED /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
+		0630459227C4131600B51CED /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		0630459427C4147600B51CED /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		0630459627C4165200B51CED /* StarterVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterVIew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				0630458227C4070F00B51CED /* StateAndDataFlowApp.swift */,
 				0630458427C4070F00B51CED /* ContentView.swift */,
+				0630459027C40BEA00B51CED /* TimeCounter.swift */,
+				0630459227C4131600B51CED /* RegisterView.swift */,
+				0630459627C4165200B51CED /* StarterVIew.swift */,
+				0630459427C4147600B51CED /* UserManager.swift */,
 				0630458627C4071000B51CED /* Assets.xcassets */,
 				0630458827C4071000B51CED /* Preview Content */,
 			);
@@ -137,7 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0630459727C4165200B51CED /* StarterVIew.swift in Sources */,
+				0630459127C40BEA00B51CED /* TimeCounter.swift in Sources */,
+				0630459327C4131600B51CED /* RegisterView.swift in Sources */,
 				0630458527C4070F00B51CED /* ContentView.swift in Sources */,
+				0630459527C4147600B51CED /* UserManager.swift in Sources */,
 				0630458327C4070F00B51CED /* StateAndDataFlowApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
