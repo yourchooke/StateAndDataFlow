@@ -13,14 +13,21 @@ struct RegisterView: View {
     
     var body: some View {
         VStack {
-            TextField("Enter your name...", text: $name)
+            HStack{
+                TextField("Enter your name...", text: $name)
                 .multilineTextAlignment(.center)
+                .offset(x: 30, y: 0)
+                Text("\(name.count)")
+                    .foregroundColor(name.count < 3 ? .red : .green)
+                    .padding()
+            }
             Button(action: registerUser) {
                 HStack {
                     Image(systemName: "checkmark.circle")
                     Text("Ok")
                 }
             }
+            .disabled(name.count < 3 ? true : false)
         }
     }
 }
