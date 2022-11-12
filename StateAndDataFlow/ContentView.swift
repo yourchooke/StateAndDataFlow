@@ -21,6 +21,13 @@ struct ContentView: View {
             Spacer()
             ButtonView(timer: timer)
             Spacer()
+            Button(action: StorageManager.shared.logout, label: {
+                Text("Logout")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+            })
+            .buttonModify(.blue)
         }
     }
 }
@@ -42,12 +49,7 @@ struct ButtonView: View {
                 .fontWeight(.bold)
                 .foregroundColor(.white)
         }
-        .frame(width: 200, height: 60)
-        .background(Color.red)
-        .cornerRadius(20)
-        .overlay(
-            RoundedRectangle(cornerRadius: 20)
-                .stroke(Color.black, lineWidth: 4)
-        )
+        .buttonModify(.red)
+        
     }
 }
