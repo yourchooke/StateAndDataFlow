@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct RegisterView: View {
-    @EnvironmentObject var user: UserManager
-    @State private var name = ""
+    @EnvironmentObject var userManager: UserManager
+
     
     var body: some View {
         VStack {
             HStack{
-                TextField("Enter your name...", text: $name)
+                TextField("Enter your name...", text: $userManager.user.name)
                 .multilineTextAlignment(.center)
                 .offset(x: 30, y: 0)
-                Text("\(name.count)")
-                    .foregroundColor(name.count < 3 ? .red : .green)
+                Text("\(userManager.user.name.count)")
+                    .foregroundColor(userManager.nameIsValid ? .green : .red)
                     .padding()
             }
             Button(action: registerUser) {
@@ -27,16 +27,16 @@ struct RegisterView: View {
                     Text("Ok")
                 }
             }
-            .disabled(name.count < 3 ? true : false)
+            .disabled(!userManager.nameIsValid)
         }
     }
 }
 
 extension RegisterView {
     private func registerUser() {
-        if !name.isEmpty {
-            user.name = name
-            user.isRegister.toggle()
+        if !userManager.user.name.isEmpty {
+            userManager.user.isRegistered.toggle()
+            StorageManager.shared.saveUser(user: userManager.user)
         }
     }
 }
@@ -44,5 +44,6 @@ extension RegisterView {
 struct RegisterView_Previews: PreviewProvider {
     static var previews: some View {
         RegisterView()
+            .environmentObject(UserManager())
     }
 }

@@ -15,6 +15,7 @@
 		0630459327C4131600B51CED /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0630459227C4131600B51CED /* RegisterView.swift */; };
 		0630459527C4147600B51CED /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0630459427C4147600B51CED /* UserManager.swift */; };
 		0630459727C4165200B51CED /* StarterVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0630459627C4165200B51CED /* StarterVIew.swift */; };
+		278E1256291FCEDA003D2B4A /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278E1255291FCEDA003D2B4A /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		0630459227C4131600B51CED /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		0630459427C4147600B51CED /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		0630459627C4165200B51CED /* StarterVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterVIew.swift; sourceTree = "<group>"; };
+		278E1255291FCEDA003D2B4A /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				0630459027C40BEA00B51CED /* TimeCounter.swift */,
 				0630459227C4131600B51CED /* RegisterView.swift */,
 				0630459627C4165200B51CED /* StarterVIew.swift */,
+				278E1255291FCEDA003D2B4A /* StorageManager.swift */,
 				0630459427C4147600B51CED /* UserManager.swift */,
 				0630458627C4071000B51CED /* Assets.xcassets */,
 				0630458827C4071000B51CED /* Preview Content */,
@@ -152,6 +155,7 @@
 				0630459727C4165200B51CED /* StarterVIew.swift in Sources */,
 				0630459127C40BEA00B51CED /* TimeCounter.swift in Sources */,
 				0630459327C4131600B51CED /* RegisterView.swift in Sources */,
+				278E1256291FCEDA003D2B4A /* StorageManager.swift in Sources */,
 				0630458527C4070F00B51CED /* ContentView.swift in Sources */,
 				0630459527C4147600B51CED /* UserManager.swift in Sources */,
 				0630458327C4070F00B51CED /* StateAndDataFlowApp.swift in Sources */,

@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct StarterVIew: View {
-    @EnvironmentObject var user: UserManager
+    @EnvironmentObject var userManager: UserManager
     
     var body: some View {
         Group {
-            if user.isRegister {
+            if userManager.user.isRegistered {
                 ContentView()
             } else {
                 RegisterView()
