@@ -17,6 +17,7 @@
 		0630459727C4165200B51CED /* StarterVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0630459627C4165200B51CED /* StarterVIew.swift */; };
 		278E1256291FCEDA003D2B4A /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278E1255291FCEDA003D2B4A /* StorageManager.swift */; };
 		278E1258291FFDA7003D2B4A /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278E1257291FFDA7003D2B4A /* ButtonModifier.swift */; };
+		278E125E2920CEBB003D2B4A /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278E125D2920CEBB003D2B4A /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		0630459627C4165200B51CED /* StarterVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterVIew.swift; sourceTree = "<group>"; };
 		278E1255291FCEDA003D2B4A /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		278E1257291FFDA7003D2B4A /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
+		278E125D2920CEBB003D2B4A /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				278E1257291FFDA7003D2B4A /* ButtonModifier.swift */,
+				278E125D2920CEBB003D2B4A /* ButtonView.swift */,
 				0630458427C4070F00B51CED /* ContentView.swift */,
 				0630459027C40BEA00B51CED /* TimeCounter.swift */,
 				0630459227C4131600B51CED /* RegisterView.swift */,
@@ -163,6 +166,7 @@
 				0630458527C4070F00B51CED /* ContentView.swift in Sources */,
 				0630459527C4147600B51CED /* UserManager.swift in Sources */,
 				0630458327C4070F00B51CED /* StateAndDataFlowApp.swift in Sources */,
+				278E125E2920CEBB003D2B4A /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

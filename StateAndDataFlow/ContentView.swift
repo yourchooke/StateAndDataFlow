@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var userManager: UserManager
     @StateObject private var timer = TimeCounter()
+//    @ObservedObject var timer: TimeCounter
     var body: some View {
         VStack(spacing: 40) {
             Text("Hi, \(userManager.user.name)")
@@ -19,15 +20,17 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .offset(x: 0, y: 100)
             Spacer()
-            ButtonView(timer: timer)
+            ButtonView(
+                action: timer.startTimer,
+                title: timer.buttonTitle,
+                color: .red
+            )
             Spacer()
-            Button(action: StorageManager.shared.logout, label: {
-                Text("Logout")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-            })
-            .buttonModify(.blue)
+            ButtonView(
+                action: StorageManager.shared.logout,
+                title: "Logout",
+                color: .blue
+            )
         }
     }
 }
@@ -39,17 +42,3 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct ButtonView: View {
-    @ObservedObject var timer: TimeCounter
-    
-    var body: some View {
-        Button(action: timer.startTimer) {
-            Text("\(timer.buttonTitle)")
-                .font(.title)
-                .fontWeight(.bold)
-                .foregroundColor(.white)
-        }
-        .buttonModify(.red)
-        
-    }
-}
