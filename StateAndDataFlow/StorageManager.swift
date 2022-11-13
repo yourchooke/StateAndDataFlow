@@ -25,9 +25,9 @@ final class StorageManager {
         return user
     }
     
-    func logout() -> Void {
+    func logout(userManager: UserManager) {
         savedUser = nil
-        UserManager.shared.user.isRegistered.toggle()
-        UserManager.shared.user.name = ""
+        userManager.user.isRegistered.toggle()
+        userManager.user.name = ""
     }
 }
